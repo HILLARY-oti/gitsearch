@@ -12,7 +12,9 @@ export class ProfService {
 
   constructor(private http:HttpHeaders) {
     console.log("Service is ready");
-    this.username = 'HILLARY-oti'
+    this.username = 'HILLARY-oti';
    }
-
+   getprofInfo(){
+    return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clinetid + "&client_secret=" + this.clinetsecret);
+   }
 }
