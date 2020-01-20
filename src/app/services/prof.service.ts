@@ -12,6 +12,7 @@ export class ProfService {
 
   constructor(private http:HttpHeaders) {
     console.log("Service is ready");
+    this.username = 'HILLARY-oti'
    }
 
 }
