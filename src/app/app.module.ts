@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { ProfService } from './services/prof.service';
 
@@ -10,7 +11,8 @@ import { ProfComponent } from './componets/prof/prof.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfComponent
+    ProfComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
