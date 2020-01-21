@@ -7,18 +7,19 @@ import { ProfService } from '../../services/prof.service';
 })
 export class ProfComponent implements OnInit {
 
-  profile:any;
-  repos: any;
+  public profile:any;
+   repos: any;
   userName:string;
 
   constructor(private profService: ProfService) { 
-  	this.profService.getprofInfo().subscribe(profile => {
+
+    this.profService.getprofInfo().subscribe(profile => {
     
       this.profile = profile;
     });
 
   	this.profService.getprofRepos().subscribe(repos => {
-    
+     
       this.repos = repos;
     })
   }
