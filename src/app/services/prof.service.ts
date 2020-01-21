@@ -8,11 +8,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProfService {
 
-  private userName: string;
-  private clientid:'9747c6cefc41d4d8a667';
-  private clientsecret:'62e7b398873552266a0e8d46fd03576e82041168';
+  public userName: string;
+  public clientid:'8afdde5929e04dba8c26';
+  public clientsecret:'723f13a32f01b16ff529610b89800fd9bb16f5ed';
 
-  constructor(private _http:HttpClient) {
+  constructor(public _http:HttpClient) {
+    console.log("service is a go");
+    this.userName ='HILLARY-oti';
     
    }
    getprofInfo(){
