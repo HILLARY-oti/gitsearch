@@ -6,6 +6,9 @@ Html
 Angular
 css
 
+# Code beat
+[![codebeat badge](https://codebeat.co/badges/30eadd61-3903-40c9-97a0-3a3433d76023)](https://codebeat.co/projects/github-com-hillary-oti-gitsearch-master)
+
 # Gsearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
